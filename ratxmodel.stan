@@ -12,7 +12,7 @@ transformed parameters {
     real<lower=0> alpha;
     real<lower=0> beta;
     alpha = lambda * phi;
-    beta = lambda * 1 - phi;
+    beta = lambda * (1 - phi);
 }
 model {
     phi ~ beta(1,1);
